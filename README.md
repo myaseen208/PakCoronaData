@@ -1,7 +1,7 @@
 
-## `PDHSData`: Pakistan Demographic and Health Survey Data
+## `PakCoronaData`: Pakistan COVID-19 Data
 
-###### Version : [0.1.0](https://myaseen208.github.io/PDHSData/); Copyright (C) 2019-2020: [UAF](http://uaf.edu.pk//); License: [GPL-2|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.1.0](https://myaseen208.github.io/PakCoronaData/); Copyright (C) 2019-2020: [UAF](http://uaf.edu.pk//); License: [GPL-2|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### *Muhammad Yaseen*
 
@@ -14,33 +14,27 @@ Faisalabad, Pakistan.
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 [![License: GPL
 v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version-last-release/PDHSData)](https://cran.r-project.org/package=PDHSData)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version-last-release/PakCoronaData)](https://cran.r-project.org/package=PakCoronaData)
 [![rstudio mirror
-downloads](https://cranlogs.r-pkg.org/badges/grand-total/PDHSData?color=green)](https://CRAN.R-project.org/package=PDHSData)
-<!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PDHSData) -->
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakCoronaData?color=green)](https://CRAN.R-project.org/package=PakCoronaData)
+<!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakCoronaData) -->
 
-[![develVersion](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/myaseen208/PDHSData)
+[![develVersion](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/myaseen208/PakCoronaData)
 
-<!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PDHSData/total.svg)] -->
+<!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakCoronaData/total.svg)] -->
 
 [![Project Status:
 WIP](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--02--22-yellowgreen.svg)](https://github.com/myaseen208/PDHSData)
-[![Rdoc](http://www.rdocumentation.org/badges/version/PDHSData)](http://www.rdocumentation.org/packages/PDHSData)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--29-yellowgreen.svg)](https://github.com/myaseen208/PakCoronaData)
+[![Rdoc](http://www.rdocumentation.org/badges/version/PakCoronaData)](http://www.rdocumentation.org/packages/PakCoronaData)
 
 -----
 
 ## Description
 
-Provides data set for exploration of Pakistan Demographic and Health
-Survey (PDHS) data (<http://nips.org.pk/Home.htm>). The 2017-18 Pakistan
-Demographic and Health Survey (PDHS) is designed to provide data for
-monitoring the health situation in Pakistan. The 2017-18 PDHS is the 4th
-DHS survey conducted in Pakistan since 1990-91. It provides reliable
-estimates at the national level, for urban and rural areas, and for 4
-regions and 4 provinces. The national total for indicators excludes Azad
-Jammu and Kashmir and Gilgit Baltistan.
+Provides data set for exploration of Pakistan COVID-19 data
+(\<<http://covid.gov.pk/>).
 
 ## Installation
 
@@ -48,7 +42,7 @@ The development version can be installed from github as follows:
 
 ``` r
 if (!require("remotes")) install.packages("remotes")
-remotes::install_github("myaseen208/PDHSData")
+remotes::install_github("myaseen208/PakCoronaData")
 ```
 
 ## What’s new
@@ -56,39 +50,38 @@ remotes::install_github("myaseen208/PDHSData")
 To know whats new in this version type:
 
 ``` r
-news(package = "PDHSData")
+news(package = "PakCoronaData")
 ```
 
 ## Links
 
-[Github page](https://github.com/myaseen208/PDHSData)
+[Github page](https://github.com/myaseen208/PakCoronaData)
 
-[Documentation website](https://myaseen208.github.io/PDHSData/)
+[Documentation website](https://myaseen208.github.io/PakCoronaData/)
 
-## Citing `PDHSData`
+## Citing `PakCoronaData`
 
 To cite the methods in the package use:
 
 ``` r
-citation("PDHSData")
+citation("PakCoronaData")
 ```
 
 ``` 
 
-To cite the R package 'PDHSData' in publications use:
+To cite the R package 'PakCoronaData' in publications use:
 
-  Muhammad Yaseen (2020).  PDHSData: Pakistan Demographic and Health
-  Survey Data.R package version 0.1.0 ,
-  https://myaseen208.github.io/PDHSData/.
+  Muhammad Yaseen (2020).  PakCoronaData: Pakistan COVID-19 Data.R
+  package version 0.1.0 , https://myaseen208.github.io/PakCoronaData/.
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
-    title = {PDHSData: Pakistan Demographic and Health Survey Data},
+    title = {PakCoronaData: Pakistan COVID-19 Data},
     author = {{Muhammad Yaseen}},
     year = {2020},
     note = {R package version 0.1.0},
-    note = {https://myaseen208.github.io/PDHSData/},
+    note = {https://myaseen208.github.io/PakCoronaData/},
   }
 
 This free and open-source software implements academic research by the
