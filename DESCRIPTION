@@ -1,0 +1,26 @@
+Package: PakCoronaData
+Type: Package
+Title: Pakistan COVID-19 Data
+Version: 0.1.0
+Authors@R: 
+          c(
+            person(c("Muhammad", "Yaseen")
+          , email = "myaseen208@gmail.com"
+          , role = c("aut", "cre")
+          , comment = c(ORCID = "0000-0002-5923-1714"))
+          )
+Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
+Description: Provides data set for exploration of Pakistan COVID-19 data (<http://covid.gov.pk/).
+Depends: R (>= 3.5.0)
+Copyright: 2019-2020, UAF
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/myaseen208/PakCoronaData
+     https://myaseen208.github.io/PakCoronaData/
+BugReports: https://github.com/myaseen208/PakCoronaData/issues
+Note: Department of Mathematics and Statistics, University of Agriculture Faisalabad, Faisalabad-Pakistan.
+Imports: tidytable
+Suggests: knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0

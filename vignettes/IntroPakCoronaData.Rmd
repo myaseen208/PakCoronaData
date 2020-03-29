@@ -1,0 +1,85 @@
+---
+title: "Introduction to PakCoronaData: Pakistan COVID-19 Data"
+author: "Muhammad Yaseen^1^"
+date: "`r Sys.Date()`"
+geometry: margin=3cm
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    dev: cairo_pdf
+    fig_caption: yes
+    number_sections: yes
+    toc: yes  
+documentclass: article
+header-includes:
+- \usepackage{fancyhdr}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \pagestyle{fancy}
+- \fancyfoot[C]{\thepage}
+- \usepackage{hyperref}
+- \hypersetup{colorlinks=true}
+- \hypersetup{linktoc=all}
+- \hypersetup{linkcolor=blue}
+- \usepackage{pdflscape}
+- \usepackage{booktabs}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \renewcommand\thesection{\arabic{section}}
+link-citations: yes
+csl: frontiers.csl
+resource_files:
+- vignettes/rbase.png
+- vignettes/rstudio.png
+- vignettes/rstudio panes.png
+vignette: |
+  %\VignetteIndexEntry{IntroPakCoronaData}
+  %\usepackage[utf8]{inputenc}
+  %\VignetteEngine{knitr::rmarkdown_notangle}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo=FALSE}
+out_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+
+r = getOption("repos")
+r["CRAN"] = "https://cran.rstudio.com/"
+#r["CRAN"] = "https://cloud.r-project.org/"
+#r["CRAN"] = "https://ftp.iitm.ac.in/cran/"
+options(repos = r)
+```
+
+```{r, results='asis', echo=FALSE}
+switch(out_type,
+    html = {cat("
+  <p> 1. Department of Mathematics and Statistics, University of Agriculture Faisalabad, Faisalabad-Pakistan  (myaseen208@gmail.com).</p>
+              ")},
+    latex = cat("\\begin{center}
+1. Department of Mathematics and Statistics, University of Agriculture Faisalabad, Faisalabad-Pakistan  (myaseen208@gmail.com).
+
+\\end{center}" )
+)
+```
+
+\begin{center}
+\vspace{6pt}
+\hrule
+\end{center}
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "",
+                      fig.cap = "")
+```
+
+```{r echo = FALSE, message=FALSE}
+library(PakCoronaData)
+```
+
+# Introduction
+
+The `R` package `PakCoronaData` provides data set for exploration of Pakistan Demographic and Health Survey (PDHS) data [http://nips.org.pk/Home.htm](http://nips.org.pk/Home.htm). The 2017-18 Pakistan Demographic and Health Survey (PDHS) is designed to provide data for monitoring the health situation in Pakistan. The 2017-18 PDHS is the 4th DHS survey conducted in Pakistan since 1990-91. It provides reliable estimates at the national level, for urban and rural areas, and for 4 regions and 4 provinces. The national total for indicators excludes Azad Jammu and Kashmir and Gilgit Baltistan.
