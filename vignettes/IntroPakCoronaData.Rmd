@@ -82,4 +82,4 @@ library(PakCoronaData)
 
 # Introduction
 
-The `R` package `PakCoronaData` provides data set for exploration of Pakistan Demographic and Health Survey (PDHS) data [http://nips.org.pk/Home.htm](http://nips.org.pk/Home.htm). The 2017-18 Pakistan Demographic and Health Survey (PDHS) is designed to provide data for monitoring the health situation in Pakistan. The 2017-18 PDHS is the 4th DHS survey conducted in Pakistan since 1990-91. It provides reliable estimates at the national level, for urban and rural areas, and for 4 regions and 4 provinces. The national total for indicators excludes Azad Jammu and Kashmir and Gilgit Baltistan.
+The `R` package `PakCoronaData` provides data set for exploration of Pakistan COVID-19 data [http://covid.gov.pk/](http://covid.gov.pk/).
