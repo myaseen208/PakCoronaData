@@ -32,6 +32,31 @@
 #'   dt_filter(Region == "Pakistan") %>% 
 #'   dt_arrange(-Date)
 #'   
-#'     
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "Punjab") %>% 
+#'   dt_arrange(-Date)
+#'   
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "Sindh") %>% 
+#'   dt_arrange(-Date)     
 #'  
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "KPk") %>% 
+#'   dt_arrange(-Date)
+#'   
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "Balochistan") %>% 
+#'   dt_arrange(-Date)
+#'   
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "ICT") %>% 
+#'   dt_arrange(-Date)
+#'   
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "GB") %>% 
+#'   dt_arrange(-Date)
+#'   
+#'  PakCoronaData %>% 
+#'   dt_filter(Region == "AJK") %>% 
+#'   dt_arrange(-Date)
 NULL

@@ -194,33 +194,123 @@
 #&gt;   4: Pakistan 2020-02-29         4      4      0         0
 #&gt;   5: Pakistan 2020-03-01         4      4      0         0
 #&gt;  ---                                                      
-#&gt; 252:      AJK 2020-03-24         1      1      0         0
-#&gt; 253:      AJK 2020-03-25         1      1      0         0
-#&gt; 254:      AJK 2020-03-26         2      2      0         0
-#&gt; 255:      AJK 2020-03-27         2      2      0         0
-#&gt; 256:      AJK 2020-03-28         2      2      0         0</div><div class='input'>
+#&gt; 260:      AJK 2020-03-25         1      1      0         0
+#&gt; 261:      AJK 2020-03-26         2      2      0         0
+#&gt; 262:      AJK 2020-03-27         2      2      0         0
+#&gt; 263:      AJK 2020-03-28         2      2      0         0
+#&gt; 264:      AJK 2020-03-29         2      2      0         0</div><div class='input'>
  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>tidytable</span>)</div><div class='output co'>#&gt; <span class='message'></span>
 #&gt; <span class='message'>Attaching package: ‘tidytable’</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:stats’:</span>
 #&gt; <span class='message'></span>
 #&gt; <span class='message'>    dt</span></div><div class='input'>
  <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/dt_filter.html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"Pakistan"</span>) <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/dt_arrange.html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;       Region       Date Confirmed Active Deaths Recovered
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"Pakistan"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;       Region       Date Confirmed Active Deaths Recovered
 #&gt;        &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
-#&gt;  1: Pakistan 2020-03-28      1408   1372     11        25
-#&gt;  2: Pakistan 2020-03-27      1296   1263     10        23
-#&gt;  3: Pakistan 2020-03-26      1235   1203      9        23
-#&gt;  4: Pakistan 2020-03-25      1022    993      8        21
-#&gt;  5: Pakistan 2020-03-24      1000    974      7        19
+#&gt;  1: Pakistan 2020-03-29      1526   1485     13        28
+#&gt;  2: Pakistan 2020-03-28      1408   1372     11        25
+#&gt;  3: Pakistan 2020-03-27      1296   1263     10        23
+#&gt;  4: Pakistan 2020-03-26      1235   1203      9        23
+#&gt;  5: Pakistan 2020-03-25      1022    993      8        21
 #&gt; ---                                                      
-#&gt; 28: Pakistan 2020-03-01         4      4      0         0
-#&gt; 29: Pakistan 2020-02-29         4      4      0         0
-#&gt; 30: Pakistan 2020-02-28         4      4      0         0
-#&gt; 31: Pakistan 2020-02-27         2      2      0         0
-#&gt; 32: Pakistan 2020-02-26         2      2      0         0</div><div class='input'>  
-    
- 
-</div></pre>
+#&gt; 29: Pakistan 2020-03-01         4      4      0         0
+#&gt; 30: Pakistan 2020-02-29         4      4      0         0
+#&gt; 31: Pakistan 2020-02-28         4      4      0         0
+#&gt; 32: Pakistan 2020-02-27         2      2      0         0
+#&gt; 33: Pakistan 2020-02-26         2      2      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"Punjab"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;     Region       Date Confirmed Active Deaths Recovered
+#&gt;      &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1: Punjab 2020-03-29       558    549      5         4
+#&gt;  2: Punjab 2020-03-28       490    481      5         4
+#&gt;  3: Punjab 2020-03-27       425    418      4         3
+#&gt;  4: Punjab 2020-03-26       408    402      3         3
+#&gt;  5: Punjab 2020-03-25       323    318      2         3
+#&gt; ---                                                    
+#&gt; 29: Punjab 2020-03-01         0      0      0         0
+#&gt; 30: Punjab 2020-02-29         0      0      0         0
+#&gt; 31: Punjab 2020-02-28         0      0      0         0
+#&gt; 32: Punjab 2020-02-27         0      0      0         0
+#&gt; 33: Punjab 2020-02-26         0      0      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"Sindh"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;     Region       Date Confirmed Active Deaths Recovered
+#&gt;      &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1:  Sindh 2020-03-29       481    465      2        14
+#&gt;  2:  Sindh 2020-03-28       457    442      1        14
+#&gt;  3:  Sindh 2020-03-27       440    425      1        14
+#&gt;  4:  Sindh 2020-03-26       429    414      1        14
+#&gt;  5:  Sindh 2020-03-25       417    402      1        14
+#&gt; ---                                                    
+#&gt; 29:  Sindh 2020-03-01        NA     NA      0         0
+#&gt; 30:  Sindh 2020-02-29        NA     NA      0         0
+#&gt; 31:  Sindh 2020-02-28        NA     NA      0         0
+#&gt; 32:  Sindh 2020-02-27        NA     NA      0         0
+#&gt; 33:  Sindh 2020-02-26        NA     NA      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"KPk"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt; Empty data.table (0 rows and 6 cols): Region,Date,Confirmed,Active,Deaths,Recovered</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"Balochistan"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;          Region       Date Confirmed Active Deaths Recovered
+#&gt;           &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1: Balochistan 2020-03-29       138    135      1         2
+#&gt;  2: Balochistan 2020-03-28       133    132      1         0
+#&gt;  3: Balochistan 2020-03-27       131    130      1         0
+#&gt;  4: Balochistan 2020-03-26       131    130      1         0
+#&gt;  5: Balochistan 2020-03-25       131    130      1         0
+#&gt; ---                                                         
+#&gt; 29: Balochistan 2020-03-01        NA     NA      0         0
+#&gt; 30: Balochistan 2020-02-29        NA     NA      0         0
+#&gt; 31: Balochistan 2020-02-28        NA     NA      0         0
+#&gt; 32: Balochistan 2020-02-27        NA     NA      0         0
+#&gt; 33: Balochistan 2020-02-26        NA     NA      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"ICT"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;     Region       Date Confirmed Active Deaths Recovered
+#&gt;      &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1:    ICT 2020-03-29        43     41      0         2
+#&gt;  2:    ICT 2020-03-28        39     37      0         2
+#&gt;  3:    ICT 2020-03-27        27     25      0         2
+#&gt;  4:    ICT 2020-03-26        27     25      0         2
+#&gt;  5:    ICT 2020-03-25        25     23      0         2
+#&gt; ---                                                    
+#&gt; 29:    ICT 2020-03-01        NA     NA      0         0
+#&gt; 30:    ICT 2020-02-29        NA     NA      0         0
+#&gt; 31:    ICT 2020-02-28        NA     NA      0         0
+#&gt; 32:    ICT 2020-02-27        NA     NA      0         0
+#&gt; 33:    ICT 2020-02-26        NA     NA      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"GB"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;     Region       Date Confirmed Active Deaths Recovered
+#&gt;      &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1:     GB 2020-03-29       116   1111      1         4
+#&gt;  2:     GB 2020-03-28       107    103      1         4
+#&gt;  3:     GB 2020-03-27        91     88      1         4
+#&gt;  4:     GB 2020-03-26        91     88      1         2
+#&gt;  5:     GB 2020-03-25        84     83      1         0
+#&gt; ---                                                    
+#&gt; 29:     GB 2020-03-01        NA     NA      0         0
+#&gt; 30:     GB 2020-02-29        NA     NA      0         0
+#&gt; 31:     GB 2020-02-28        NA     NA      0         0
+#&gt; 32:     GB 2020-02-27        NA     NA      0         0
+#&gt; 33:     GB 2020-02-26        NA     NA      0         0</div><div class='input'>
+ <span class='no'>PakCoronaData</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/filter..html'>dt_filter</a></span>(<span class='no'>Region</span> <span class='kw'>==</span> <span class='st'>"AJK"</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/tidytable/man/arrange..html'>dt_arrange</a></span>(-<span class='no'>Date</span>)</div><div class='output co'>#&gt;     Region       Date Confirmed Active Deaths Recovered
+#&gt;      &lt;fct&gt;     &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+#&gt;  1:    AJK 2020-03-29         2      2      0         0
+#&gt;  2:    AJK 2020-03-28         2      2      0         0
+#&gt;  3:    AJK 2020-03-27         2      2      0         0
+#&gt;  4:    AJK 2020-03-26         2      2      0         0
+#&gt;  5:    AJK 2020-03-25         1      1      0         0
+#&gt; ---                                                    
+#&gt; 29:    AJK 2020-03-01         0      0      0         0
+#&gt; 30:    AJK 2020-02-29         0      0      0         0
+#&gt; 31:    AJK 2020-02-28         0      0      0         0
+#&gt; 32:    AJK 2020-02-27         0      0      0         0
+#&gt; 33:    AJK 2020-02-26         0      0      0         0</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <h2>Contents</h2>
